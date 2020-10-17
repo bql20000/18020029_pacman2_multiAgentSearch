@@ -23,6 +23,7 @@ Similar to minimax search
 Similar to minimax search, but the minimax search function return the average score instead of min score if the current agent is not Pacman. Thus the ghosts in this section play less optimized and more randomly.
 
 ### Question 5 (6/6): Evaluation function
-I try I apply the similiar function from question 1, but it seems to be insufficient. (only 5/6 points, with around 950 score in average)
+I try I apply the similiar function from question 1, but it seems to be insufficient. (only 5/6 points, with around 950 score in average) <br />
+First I change the minimum distance allowed from Pacman to closest ghost to 2 (instead of 1 like question 1). This will make sure the Pacman won't crash into ghosts. <br />
 Then I add to the function sum of the scared time of ghosts, which means now Pacman is encouraged to eat the big food and eat the ghost is possible. This improvement significantly increase the score. (6/6 points, 1200 score in average)
 
